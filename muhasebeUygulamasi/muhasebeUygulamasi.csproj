@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A75768A3-E563-4C9C-A1AE-55598E1E580F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>muhasebeUygulamasi</RootNamespace>
+    <AssemblyName>muhasebeUygulamasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Banka Hareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banka Hareketler.Designer.cs">
+      <DependentUpon>Banka Hareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banka.Designer.cs">
+      <DependentUpon>Banka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BankaBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankaBarcode.Designer.cs">
+      <DependentUpon>BankaBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banka_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banka_Ekle.Designer.cs">
+      <DependentUpon>Banka_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Banka_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banka_Guncelle.Designer.cs">
+      <DependentUpon>Banka_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari.Designer.cs">
+      <DependentUpon>Cari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CariBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariBarcode.Designer.cs">
+      <DependentUpon>CariBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CariHareketler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariHareketler.Designer.cs">
+      <DependentUpon>CariHareketler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari_Ekle.Designer.cs">
+      <DependentUpon>Cari_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cari_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cari_Guncelle.Designer.cs">
+      <DependentUpon>Cari_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CekKasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CekKasa.Designer.cs">
+      <DependentUpon>CekKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CekSenetBankadan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CekSenetBankadan.Designer.cs">
+      <DependentUpon>CekSenetBankadan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CekSenetBArcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CekSenetBArcode.Designer.cs">
+      <DependentUpon>CekSenetBArcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CekSenetİslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CekSenetİslemler.Designer.cs">
+      <DependentUpon>CekSenetİslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cek_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cek_Ekle.Designer.cs">
+      <DependentUpon>Cek_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cek_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cek_Guncelle.Designer.cs">
+      <DependentUpon>Cek_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura Ekle.Designer.cs">
+      <DependentUpon>Fatura Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura Guncelle.Designer.cs">
+      <DependentUpon>Fatura Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura.Designer.cs">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaBarcode.Designer.cs">
+      <DependentUpon>FaturaBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma Ekle.Designer.cs">
+      <DependentUpon>Firma Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma Guncelle.Designer.cs">
+      <DependentUpon>Firma Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firma Hesapları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Firma Hesapları.Designer.cs">
+      <DependentUpon>Firma Hesapları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafik.Designer.cs">
+      <DependentUpon>Grafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkımızda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hakkımızda.Designer.cs">
+      <DependentUpon>Hakkımızda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa Hareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa Hareketleri.Designer.cs">
+      <DependentUpon>Kasa Hareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasaBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasaBarcode.Designer.cs">
+      <DependentUpon>KasaBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa_Ekle.Designer.cs">
+      <DependentUpon>Kasa_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasa_Guncelle.Designer.cs">
+      <DependentUpon>Kasa_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciHesaplari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciHesaplari.Designer.cs">
+      <DependentUpon>KullaniciHesaplari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login2.Designer.cs">
+      <DependentUpon>login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebeUygulamasiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MuhasebeUygulamasiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebeUygulamasiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MuhasebeUygulamasiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raporlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raporlama.Designer.cs">
+      <DependentUpon>Raporlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDeğistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDeğistir.Designer.cs">
+      <DependentUpon>SifreDeğistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis Ekle.Designer.cs">
+      <DependentUpon>Siparis Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparis Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparis Guncelle.Designer.cs">
+      <DependentUpon>Siparis Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisBarcode.Designer.cs">
+      <DependentUpon>SiparisBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisiAktar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisiAktar.Designer.cs">
+      <DependentUpon>SiparisiAktar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sipariş İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sipariş İşlemleri.Designer.cs">
+      <DependentUpon>Sipariş İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok Güncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Güncelleme.Designer.cs">
+      <DependentUpon>Stok Güncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok Hareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Hareketleri.Designer.cs">
+      <DependentUpon>Stok Hareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok.Designer.cs">
+      <DependentUpon>Stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokBarcode.Designer.cs">
+      <DependentUpon>StokBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_Ekle.Designer.cs">
+      <DependentUpon>Stok_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tahsilat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tahsilat.Designer.cs">
+      <DependentUpon>Tahsilat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teklif İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teklif İşlemleri.Designer.cs">
+      <DependentUpon>Teklif İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeklifBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeklifBarcode.Designer.cs">
+      <DependentUpon>TeklifBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teklif_Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teklif_Ekle.Designer.cs">
+      <DependentUpon>Teklif_Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teklif_Guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teklif_Guncelle.Designer.cs">
+      <DependentUpon>Teklif_Guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Çek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Çek.Designer.cs">
+      <DependentUpon>Çek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliye Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliye Ekle.Designer.cs">
+      <DependentUpon>İrsaliye Ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliye Güncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliye Güncelle.Designer.cs">
+      <DependentUpon>İrsaliye Güncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliye.Designer.cs">
+      <DependentUpon>İrsaliye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliyeAktar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliyeAktar.Designer.cs">
+      <DependentUpon>İrsaliyeAktar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="İrsaliyebarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="İrsaliyebarcode.Designer.cs">
+      <DependentUpon>İrsaliyebarcode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Banka Hareketler.resx">
+      <DependentUpon>Banka Hareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banka.resx">
+      <DependentUpon>Banka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BankaBarcode.resx">
+      <DependentUpon>BankaBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banka_Ekle.resx">
+      <DependentUpon>Banka_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banka_Guncelle.resx">
+      <DependentUpon>Banka_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari.resx">
+      <DependentUpon>Cari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CariBarcode.resx">
+      <DependentUpon>CariBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CariHareketler.resx">
+      <DependentUpon>CariHareketler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari_Ekle.resx">
+      <DependentUpon>Cari_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cari_Guncelle.resx">
+      <DependentUpon>Cari_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CekKasa.resx">
+      <DependentUpon>CekKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CekSenetBankadan.resx">
+      <DependentUpon>CekSenetBankadan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CekSenetBArcode.resx">
+      <DependentUpon>CekSenetBArcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CekSenetİslemler.resx">
+      <DependentUpon>CekSenetİslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cek_Ekle.resx">
+      <DependentUpon>Cek_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cek_Guncelle.resx">
+      <DependentUpon>Cek_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura Ekle.resx">
+      <DependentUpon>Fatura Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura Guncelle.resx">
+      <DependentUpon>Fatura Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura.resx">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaBarcode.resx">
+      <DependentUpon>FaturaBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma Ekle.resx">
+      <DependentUpon>Firma Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma Guncelle.resx">
+      <DependentUpon>Firma Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Firma Hesapları.resx">
+      <DependentUpon>Firma Hesapları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafik.resx">
+      <DependentUpon>Grafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hakkımızda.resx">
+      <DependentUpon>Hakkımızda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa Hareketleri.resx">
+      <DependentUpon>Kasa Hareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasaBarcode.resx">
+      <DependentUpon>KasaBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa_Ekle.resx">
+      <DependentUpon>Kasa_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa_Guncelle.resx">
+      <DependentUpon>Kasa_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciHesaplari.resx">
+      <DependentUpon>KullaniciHesaplari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login2.resx">
+      <DependentUpon>login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Raporlama.resx">
+      <DependentUpon>Raporlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreDeğistir.resx">
+      <DependentUpon>SifreDeğistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis Ekle.resx">
+      <DependentUpon>Siparis Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparis Guncelle.resx">
+      <DependentUpon>Siparis Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisBarcode.resx">
+      <DependentUpon>SiparisBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisiAktar.resx">
+      <DependentUpon>SiparisiAktar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sipariş İşlemleri.resx">
+      <DependentUpon>Sipariş İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok Güncelleme.resx">
+      <DependentUpon>Stok Güncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok Hareketleri.resx">
+      <DependentUpon>Stok Hareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok.resx">
+      <DependentUpon>Stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokBarcode.resx">
+      <DependentUpon>StokBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_Ekle.resx">
+      <DependentUpon>Stok_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tahsilat.resx">
+      <DependentUpon>Tahsilat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teklif İşlemleri.resx">
+      <DependentUpon>Teklif İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeklifBarcode.resx">
+      <DependentUpon>TeklifBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teklif_Ekle.resx">
+      <DependentUpon>Teklif_Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teklif_Guncelle.resx">
+      <DependentUpon>Teklif_Guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Çek.resx">
+      <DependentUpon>Çek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliye Ekle.resx">
+      <DependentUpon>İrsaliye Ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliye Güncelle.resx">
+      <DependentUpon>İrsaliye Güncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliye.resx">
+      <DependentUpon>İrsaliye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliyeAktar.resx">
+      <DependentUpon>İrsaliyeAktar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="İrsaliyebarcode.resx">
+      <DependentUpon>İrsaliyebarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MuhasebeUygulamasiDataSet.xsc">
+      <DependentUpon>MuhasebeUygulamasiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MuhasebeUygulamasiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MuhasebeUygulamasiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MuhasebeUygulamasiDataSet.xss">
+      <DependentUpon>MuhasebeUygulamasiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MuhasebeUygulamasiDataSet1.xsc">
+      <DependentUpon>MuhasebeUygulamasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MuhasebeUygulamasiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MuhasebeUygulamasiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MuhasebeUygulamasiDataSet1.xss">
+      <DependentUpon>MuhasebeUygulamasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nehir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arka2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
